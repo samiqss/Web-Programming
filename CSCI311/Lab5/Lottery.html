@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Created by Sami Al-Qusus -->
+<!-- Originally created by Sami Al-Qusus February 12, 2018 -->
+<!-- modified February 18, 2018 -->
+<!-- Lottery.html required for Lab5 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Lottery</title>
+        <link rel="stylesheet" type="text/CSS" href="./css/sharedStyles.css">
+            </head>
+    <body>
+        <div id="main">
+            <h1>Lottery</h1>
+            <nav>
+                <ul>
+                    <li class="pagelink"><a href="Lab5.html">Home</a></li>
+                    <li class="pagelink"><a href="Lottery.html">Lottery</a></li>
+                    <li class="pagelink"><a href="Canvas.html">Canvas</a></li>
+                </ul>
+            </nav>
+            <div>
+                
+            <h2>Try your luck! pick five numbers then press play</h2>
+                
+            <label  for="input1" class="myLabel">1st number</label>
+            <input class="myInput" type="number" name="input1" id="input1" value=0 min="0" max="9" required/>
+            
+            <label  for="input2" class="myLabel">2nd number</label>
+            <input class="myInput" type="number" name="input2" id="input2" value=0 min="0" max="9" required/>
+            
+            <label  for="input3" class="myLabel">3rd number</label>
+            <input class="myInput" type="number" name="input3" id="input3" value=0 min="0" max="9" required/>
+            
+            <label  for="input4" class="myLabel">4th number</label>
+            <input class="myInput" type="number" name="input4" id="input4" value=0 min="0" max="9" required/>
+            
+            <label  for="input5" class="myLabel">5th number</label>
+            <input class="myInput" type="number" name="input5" id="input5" value=0 min="0" max="9" required/>
+            
+            <button onclick="gen()">Play</button>
+            
+            <h2>lottery....</h2>
+            
+            <label  for="rand1" class="myLabel">1st lottery number</label>
+            <input class="myInput" type="number" name="rand1" id="rand1" value=0 min="0" max="9" readonly/>
+            
+            <label  for="rand2" class="myLabel">2nd lottery number</label>
+            <input class="myInput" type="number" name="rand2" id="rand2" value=0 min="0" max="9" readonly/>
+            
+            <label  for="rand3" class="myLabel">3rd lottery number</label>
+            <input class="myInput" type="number" name="rand3" id="rand3" value=0 min="0" max="9" readonly/>
+            
+            <label  for="rand4" class="myLabel">4th lottery number</label>
+            <input class="myInput" type="number" name="rand4" id="rand4" value=0 min="0" max="9" readonly/>
+            
+            <label  for="rand4" class="myLabel">5th lottery number</label>
+            <input class="myInput" type="number" name="rand5" id="rand5" value=0 min="0" max="9" readonly/>
+            
+            
+            
+            <h3 id="picks"></h3>
+            <div>
+            <span id="n1"></span>
+            <span id="n2"></span>
+            <span id="n3"></span>
+            <span id="n4"></span>
+            <span id="n5"></span>
+            </div>
+            
+            <h3 id="results"></h3>
+            <div>
+            <span id="r1"></span>
+            <span id="r2"></span>
+            <span id="r3"></span>
+            <span id="r4"></span>
+            <span id="r5"></span>
+            </div>
+            
+            <p id="result" style="color:red;"></p>
+            
+            </div>
+            
+            <footer style="text-align:center;">
+                <small>Copyright &copy;2018 Sami Al-Qusus</small>
+            </footer>
+        </div>
+        <script  src="./js/lottery.js"></script>
+    </body>
+</html>
+

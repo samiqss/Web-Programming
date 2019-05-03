@@ -1,0 +1,112 @@
+/*
+ Created by Sami Al-Qusus
+ Originally created Sami Al-Qusus January 22, 2018
+ modified February 12, 2018
+ sharedStyles.css required for Lab4
+ */
+
+
+
+#main {
+    font-family: Nifty;
+    border: 2px solid  gray;
+    width:70%;
+    padding: 20px;
+    
+}
+
+#form {
+    border: 2px solid gray;
+    width: 50%;
+    padding: 5px 5px 5px 150px;
+    right:800px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    background-color: red;
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+}
+
+#pagetext p {
+    width: 60%;
+    text-align: justify;
+}
+
+footer {
+    width: 90%;
+}
+
+.myLabel {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    padding-top: 2px;
+    padding-right: 5px;
+    width: 200px;
+}
+
+.myError{
+    color: red;
+}
+.myInput {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 100%;
+    width: 200px;
+    padding-left: 5px;
+}
+
+.inputRow{
+    left: 0;
+    position: relative;
+    padding: 5px;
+}
+
+.inputBlock{
+    margin: 3px;
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+body {
+    
+    background:lightblue;
+}
+/*
+nav {
+    float: left;
+    padding: 0px 10px 0px 0px;
+    width: 130px;
+    margin-top: 10px;
+}
+*/
+nav li {
+    line-height:150%;
+    display:block;
+    list-style-type: none;
+    padding: 5px 5px;
+    background-color: lightgray;
+    border: 2px solid gray;
+    margin: 0;
+    margin-bottom: 3px;
+    width: 70px;
+}
+
+

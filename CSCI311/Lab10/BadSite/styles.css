@@ -1,0 +1,46 @@
+/*for starter template*/
+body {
+  padding-top: 15rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.myTable{
+	display:table;
+	text-align: center;
+}
+.myRow{
+	display:table-row;
+}
+.myCol{
+	display:table-cell;
+	border:solid;
+	border-width: thin;
+	padding: 0px 5px;
+}
+.odd{
+	background-color: white;
+}
+.even{
+	background-color: #DDD;
+}

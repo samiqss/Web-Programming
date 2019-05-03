@@ -1,0 +1,40 @@
+Sami Al-Qusus
+CSCI311 Lab1
+
+Answers
+
+list all errors
+---------------
+1 Error: The character encoding was not declared. Proceeding using windows-1252.
+Error discription: missing the  meta charset tag
+
+2 Error: Element head is missing a required instance of child element Title
+Error discription: missing the Title tag
+
+3 Error: End tag header seen, but there were open elements 
+Error discription: closing h1 tag appears to come after the closing header tag
+
+4 Error unclosed element h1
+Error discription: same as previous Error closing h1 tag appears to come after the closing header tag
+
+5 Error Stray end tag h1
+Error discription: same reason for Error 3 and 4, same as previous Error closing h1 tag appears to come after the closing header tag
+
+6 Error: Element stong not allowed as child of element p in this context. (Suppressing further errors from this subtree.)
+Error discription: there is a typo in the opening for the tag strong, the 'r' is missing from it
+
+7 Error: Stray end tag strong.
+Error discription: because of the typo in the opening tag of strong, the ending tag for strong is seen as "Stray end tag" meaning its looks like its out of no where.
+
+8 Error: End tag p seen, but there were open elements.
+Error discription: Again because of the typo in the opening tag strong, it seems like whatever "stong" is, it wasnt closed.
+
+9 Error: Unclosed element stong.
+Error discription: Again because of the typo in the opening tag strong, it seems like whatever "stong" is, it wasn
+t closed.
+
+10 Error: Named character reference was not terminated by a semicolon. (Or & should have been escaped as &amp;.)
+Error discription: missing a semicolon after &copy to show its an ASCII character.
+
+
+

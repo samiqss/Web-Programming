@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Cougar",
+    "weight":"53-100 kg",
+    "range":"Yukon to South American Andes"
+  },
+  {
+    "name":"Jaguar",
+    "weight":"56-96 kg",
+    "range":"Southwest US to Central America"
+  },
+  {
+    "name":"Leopard",
+    "weight":"31 kg",
+    "range":"Asia and Africa"
+  },
+  {
+    "name":"Cheetah",
+    "weight":"21-72 kg",
+    "range":"Central and South Asia"
+  }
+]

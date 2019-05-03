@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Created by Sami Al-Qusus -->
+<!-- Originally created by Sami Al-Qusus February 12, 2018 -->
+<!-- modified February 18, 2018 -->
+<!-- Canvas.html required for Lab5 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Canvas</title>
+        <link rel="stylesheet" type="text/CSS" href="./css/sharedStyles.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1>Canvas</h1>
+            <nav>
+                <ul>
+                    <li class="pagelink"><a href="Lab5.html">Home</a></li>
+                    <li class="pagelink"><a href="Lottery.html">Lottery</a></li>
+                    <li class="pagelink"><a href="Canvas.html">Canvas</a></li>
+                </ul>
+            </nav>
+            
+            <h2>Start creating shapes bellow... for some fun, let the system randomy create them..</h2>
+            
+            <div id="canv">
+            <canvas id="myCanvas" width="600" height="600" style="border:2px solid;"></canvas>
+            </div>
+            <div>
+            <label  for="shape" class="myLabel">Shape</label>
+            <select class="myInput" name="shape" id="shape" onchange="update()">
+                <option value="circle">circle</option>
+                <option value="line">line</option>
+                <option value="rectangle">rectangle</option>
+            </select>
+            
+            <label  for="inputx" class="myLabel">x position</label>
+            <input class="myInput" type="number" name="inputx" id="inputx" value=0  required/>
+            
+            
+            <label  for="inputy" class="myLabel">y position</label>
+            <input class="myInput" type="number" name="inputy" id="inputy" value=0  required/>
+            
+            <label  for="color" class="myLabel">color</label>
+            <input class="myInput" type="text" name="color" id="color" value=black  required/>
+            
+            <div id="ht" style="display:none" >
+            <label  for="height" class="myLabel">height</label>
+            <input class="myInput" type="number" name="height" id="height" value=0 required/>
+            </div>
+            
+            <div id="wth" style="display:none" >
+            <label  for="width" class="myLabel">width</label>
+            <input class="myInput" type="number" name="width" id="width" value=0 required/>
+            </div>
+            
+            <div id="lnX" style="display:none" >
+            <label  for="lineX" class="myLabel">x-coordinate of where to create the line to</label>
+            <input class="myInput" type="number" name="lineX" id="lineX" value=0 required/>
+            </div>
+            
+            <div id="lnY" style="display:none" >
+            <label  for="lineY" class="myLabel">y-coordinate of where to create the line to</label>
+            <input class="myInput" type="number" name="lineY" id="lineY" value=0 required/>
+            </div>
+
+            
+            <div id="rds">
+            <label  for="radius" class="myLabel">radius</label>
+            <input class="myInput" type="number" name="radius" id="radius" value=0 required/>
+            </div>
+            
+            
+            <button onclick="addShape()">Add shape</button>
+            <button onclick="reset()">Clear canvas</button>
+            <button onclick="createRandomShape()">Create random shape</button>
+            </div>
+                
+            <footer style="text-align:center;">
+                <small>Copyright &copy;2018 Sami Al-Qusus</small>
+            </footer>
+        </div>
+        <script  src="./js/canvas.js"></script>
+    </body>
+    
+</html>
+

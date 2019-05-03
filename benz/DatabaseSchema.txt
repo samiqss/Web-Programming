@@ -1,0 +1,62 @@
+DROP TABLE Ideas;
+DROP TABLE Users;
+DROP TABLE Steps;
+DROP TABLE Wishes;
+
+CREATE TABLE Ideas(
+ideaID INT(4) AUTO_INCREMENT NOT NULL,
+iname VARCHAR(20) NOT NULL,
+description VARCHAR(2000),
+password VARCHAR(10) NOT NULL,
+note VARCHAR(200),
+status INTEGER NOT NULL,
+PRIMARY KEY (ideaID)
+);
+
+CREATE TABLE Users(
+userID INT(4) AUTO_INCREMENT NOT NULL,
+ideaID INT(4) NOT NULL,
+name VARCHAR(20) NOT NULL,
+location VARCHAR(50) NOT NULL,
+email VARCHAR(20) NOT NULL,
+PRIMARY KEY ( userID)
+);
+
+CREATE TABLE Steps(
+ideaID CHAR(4) NOT NULL,
+Snumber INT(2) NOT NULL,
+Sdescription VARCHAR(500) NOT NULL,
+Sstatus BOOLEAN,
+PRIMARY KEY (ideaID, Snumber)
+);
+
+CREATE TABLE Wishes(
+ideaID CHAR(4) NOT NULL,
+Wnumber INT(2) NOT NULL,
+Wdescription VARCHAR(500) NOT NULL,
+Wstatus BOOLEAN,
+PRIMARY KEY (ideaID,Wnumber)
+);
+
+INSERT INTO Ideas (iname, description, password, note, status) VALUES ("make burgers", "I have an idea of making burgers, it would be nice if anyone can help whenever you are free just contact me. I think its a great idea so yeah if you can help please help i will be happy to see you. We will need buns and stuff but yeah it should be fun. You can just donate money or help out by making burgers and by helping distributing the burgers to anyone in need of a burger. this is all i have to say really. feel free to contact me for any questions relating to making burgers thanks, hope to see you all", "0123456789", "this is a note", 0);
+
+INSERT INTO Ideas (iname, description, password, note, status) VALUES ("make burgers 2", "I have an idea of making burgers, it would be nice if anyone can help whenever you are free just contact me. I think its a great idea so yeah if you can help please help i will be happy to see you. We will need buns and stuff but yeah it should be fun. You can just donate money or help out by making burgers and by helping distributing the burgers to anyone in need of a burger. this is all i have to say really. feel free to contact me for any questions relating to making burgers thanks, hope to see you all", "0123456789", "this is a note", 0);
+
+INSERT INTO Users (ideaID, name, location, email) VALUES (1, "jon", "burnaby", "jon@gmail.com");
+INSERT INTO Users (ideaID, name, location, email) VALUES (2, "james", "vancouver", "james@gmail.com");
+
+INSERT INTO Steps (ideaID, Snumber, Sdescription, Sstatus) VALUES (1, 1, "this is step 1 we will plan", 0);
+INSERT INTO Steps (ideaID, Snumber, Sdescription, Sstatus) VALUES (1, 2,"this is step 2 we will collect money", 0);
+INSERT INTO Steps (ideaID, Snumber, Sdescription, Sstatus) VALUES (1, 3,"this is step 3 we will make burgers", 0);
+
+INSERT INTO Steps (ideaID, Snumber, Sdescription, Sstatus) VALUES (2, 1,"this is step 1 we will plan", 0);
+INSERT INTO Steps (ideaID, Snumber, Sdescription, Sstatus) VALUES (2, 2,"this is step 2 we will collect money and make burgers", 0);
+
+INSERT INTO Wishes (ideaID, Wnumber,Wdescription, Wstatus) VALUES (1, 1,"buns", 0);
+INSERT INTO Wishes (ideaID, Wnumber,Wdescription, Wstatus) VALUES (1, 2,"napken and plates", 0);
+INSERT INTO Wishes (ideaID, Wnumber,Wdescription, Wstatus) VALUES (1, 3,"fries", 1);
+
+INSERT INTO Wishes (ideaID, Wnumber,Wdescription, Wstatus) VALUES (2, 1,"napkens", 0);
+
+
+
