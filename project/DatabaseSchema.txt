@@ -1,0 +1,61 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE Server;
+DROP TABLE Branch;
+DROP TABLE Orders;
+DROP TABLE Dishes;
+DROP TABLE Drinks;
+SET FOREIGN_KEY_CHECKS=1;
+
+CREATE TABLE Server (
+sid INT(4) AUTO_INCREMENT NOT NULL,
+sname VARCHAR(20) NOT NULL,
+PRIMARY KEY (sid)
+);
+
+CREATE TABLE Branch(
+bid INT(4) AUTO_INCREMENT NOT NULL,
+bname VARCHAR(20) NOT NULL,
+phone VARCHAR(10),
+address VARCHAR(200) NOT NULL,
+password VARCHAR(30) NOT NULL,
+PRIMARY KEY (bid)
+);
+
+INSERT INTO Branch (bname, phone, address, password) VALUES ('zamzam', '6047177172', "6022 Island St", "manage1993");
+INSERT INTO Branch (bname, phone, address, password) VALUES ('zamzam', '6047177172', "2789 Kingsway", "manage1993");
+
+CREATE TABLE Orders (
+oid INT(4) AUTO_INCREMENT NOT NULL,
+bid INT(4) DEFAULT '0001',
+sid INT(4) NOT NULL,
+tableNumber INT(2),
+orderDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+note VARCHAR(200),
+PRIMARY KEY (oid),
+FOREIGN KEY (bid) REFERENCES Branch(bid),
+FOREIGN KEY (sid) REFERENCES Server(sid)
+);
+
+CREATE TABLE Dishes (
+dishNumber INT(2) NOT NULL,
+oid INT(4) NOT NULL,
+dishName VARCHAR(20) NOT NULL,
+dishPrice DECIMAL(4, 2) NOT NULL,
+PRIMARY KEY (dishNumber, oid),
+FOREIGN KEY (oid) REFERENCES Orders(oid)
+);
+
+CREATE TABLE Drinks (
+drinkNumber INT(2) NOT NULL,
+oid INT(4) NOT NULL,
+drinkName VARCHAR(20) NOT NULL,
+drinkPrice DECIMAL(4, 2)  NOT NULL,
+PRIMARY KEY (drinkNumber, oid),
+FOREIGN KEY (oid) REFERENCES Orders(oid)
+);
+
+
+INSERT INTO Server (sname) VALUES ('Tara');
+INSERT INTO Server (sname) VALUES ('Sami');
+INSERT INTO Server (sname) VALUES ('Dana');
+INSERT INTO Server (sname) VALUES ('Adam');

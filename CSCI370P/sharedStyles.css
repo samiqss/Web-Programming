@@ -1,0 +1,20 @@
+/*
+ Created by Sami Al-Qusus on March 18, 2018
+ sharedStyles.css required for Lab9
+ */
+
+body {
+   background:lightblue;
+   text-align: center;
+}
+
+table, th, td {
+   border: 2px solid black; 
+   border-collapse: collapse;
+}
+
+table {
+   width:100%;
+}
+
+

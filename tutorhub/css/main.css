@@ -1,0 +1,47 @@
+html, body {
+   height: 100%;
+}
+
+section.main {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+section.with-background {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.with-overflow > *:last-child {
+    margin-bottom: 65px;
+}
+
+footer {
+   color: white;
+   background-color: #2C3E50;
+   height: 70px;
+   text-align: center;
+   width: auto;
+   padding-top: 1.5rem;
+}
+
+.form-whitebox {
+  padding: 5%;
+  border: 1px solid rgb(200,200,200);
+  background: white;
+}
+
+/* make all card images the same size */
+.card-img-top{
+   width: 286px;
+   height: 286px;
+   object-fit: cover;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}

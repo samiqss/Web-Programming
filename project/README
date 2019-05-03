@@ -1,0 +1,17 @@
+README For CSCI370 Project
+Sami Al-Qusus
+April 16, 2018
+---------------------------
+Files in Directory:
+
+CSCI370Project.pdf: project report pdf
+DatabaseSchema.txt: Database Schema, create tables, and default inserts managed by db Admin
+back.php: loads footer for all pages
+front.php: loads header for all pages 
+checkpassForEdit.php: checks password before redirecting to edit page
+create.php: Creates an order
+dbinfo.inc: hold database login credentials (sensitive info)
+edit.php: updates orders if they need fixing or edit
+index.php: main page that loads all orders
+search.php: loads order of given id
+view.php: generates reciept/ view page for viewing order details
